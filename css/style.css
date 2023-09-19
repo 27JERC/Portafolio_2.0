@@ -1,0 +1,443 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+/* variables*/
+:root{
+    --colornavar:black;
+    --bg-body: #1f212c;
+    --colorborder:#08EBBF;
+    --colorborder:red;
+    --fontSize-title: 40px;
+    --fontSize-parrafos: 20px ;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+/* Color del titulo y el texto que dice Mi nombre y el texto */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: white;
+}
+p,a,li,td,input,label{
+    font-family: 'Work Sans', sans-serif;
+
+}
+body{
+    background-color: #06091E;
+}
+header{
+    padding-top: 150px;
+}
+
+
+/* BARRA DE NAVEGACION */
+
+nav.bg-port{
+/* Aqui es el color de la barra de navegacion */
+    background: black;
+    /* Lo siguiente es para que la barra de navegacion se mueva de acorde a como bajemos,  si quiere que quede fija solo borre lo que esta despues del comentario :)  */
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    top: 20px;
+
+}
+/* Aqui es el color del boton cuando se minimiza la pantalla */
+button.navbar-toggler.collapsed{
+    background-color: #08EBBF;
+}
+button.navbar-toggler-icon{
+    color: #08EBBF;
+    box-shadow:2px 2px 25px 2px #08EBBF ;
+}
+.navbar-toggler{
+    background-color: #08EBBF;
+}
+nav .navbar-brand img{
+    width: 200px;
+}
+nav.bg-port ul li a{
+    margin: 14px;
+
+}
+
+nav.bg-port ul li a{
+    color:white;
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px ;
+
+}
+
+nav.bg-port ul li a::after{
+    width: 0;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+
+
+/* colores de los botones redes */
+
+
+
+
+
+
+
+
+/* Aqui es el color cuando se le pasa el cursor a los textos de la barra de navegacion*/
+nav.bg-port ul li a:hover{
+    color:#08EBBF ;
+}
+/* AQUI ES DONDE ESTA EL TEXTO DE SOBRE MI PARA AGREFARLE EL FONDO DE COLOR */
+.flex-column {
+    flex-direction: column!important;
+    box-shadow: 2px 2px 25px 2px #08EBBF; 
+}
+/* Aqui es el */
+nav.bg-port ul li a:hover::after{
+    background: red;
+    width: 50%;
+}
+/*  hero */
+
+#hero{
+     padding: 160px 0;
+}
+
+#hero .cont-foto{
+    position: relative;
+}
+img, svg {
+    /* vertical-align: middle; */
+    border-radius: 50%;
+    box-shadow: 2px 2px 25px 2px red;
+    width: 100%;
+    /* height: auto; */
+    
+    position: relative;
+}
+/* La imagen del rostro 2 */
+#hero .cont-foto img{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 25px 2px red;
+}
+article.col-lg-8.cont-info{
+    box-shadow: 2px 2px 25px 2px #08EBBF;
+}
+
+/* ICONOS */
+
+#div.buttoms, svg {
+    border-radius: 50%;
+    box-shadow: 1px 1px 12px 1px white;
+    margin-top: auto;
+    vertical-align: middle;
+    width: 60px;
+    height: auto;
+    margin-left: 12px;
+}
+
+
+
+
+
+/* Aqui es donde se ve el texto pero quedaba muy pegado a la imagen paso de 60px a 170px */
+/* #hero .cont-info{
+    padding-left: 170px;
+} */
+
+#hero .cont-info h1{
+    color: white;
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+  
+}
+#hero .cont-info h1 span{
+    border-bottom: 12px solid white;
+}
+
+#hero .cont-info p{
+    color:white;
+    font-size: var(--fontSize-parrafos);
+    text-align: justify;
+}
+#hero .cont-info .destacada h2{
+    color: white;
+    font-size: var(--fontSize-title);
+}
+#hero .cont-info .destacada p{
+    font-size: 14px;
+}
+
+/* CLASES DESTACADAS */
+
+#cdestacadas{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 150px 0 100px;
+}
+#cdestacadas h2{
+    font-size: var(--fontSize-title);
+    color: white;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+}
+#cdestacadas p{
+    color: white;
+    position: relative;
+    margin-bottom: 70px;
+}
+/* carrusel */
+#carrusel .carousel-inner .carousel-item img {
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    height: auto;
+    max-height: 100%; /* que la imagen no se desborde verticalmente */
+    object-fit: cover; /* Escala la imagen para que llene el contenedor sin distorsionarla */
+  }
+  #carrusel .carousel-inner .carousel-item {
+    width: 100%; 
+    height: 100%; 
+  }
+
+
+
+/* Acordion */
+
+  /* Aqui es la parte de descripcion de imagenes con una lista  pero no se porque cuando cambio las id se quitan los estilos que coloco*/
+
+#des{
+    width: 100%;
+    position: relative; 
+    text-align: center;
+    padding: 70px 0 100px;
+}
+
+#des h2{
+    color: white;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+    margin-top: 100px;
+    margin-bottom: 30px;
+
+}
+#des p{
+    color: #c6c6c6;
+}
+#des .lapso{
+    /* background: var(--bg-body); */
+    margin-top: 50px;
+    padding: 50px 70px;
+    border-radius: 20px;
+    text-align: left;
+}
+#des .lapso ul{
+    border: 0 transparent;
+    margin-bottom: 50px;
+    background: var(--bg-body);
+    max-width: 220px;
+    padding: 10px;
+    border-radius: 50px;
+}
+#des .lapso ul li button{
+    background: transparent;
+    color: white;
+    border-radius: 30px;
+    width: 100px;
+    border: 0 transparent;
+}
+#des .lapso ul li button.active{
+    background: var(--primary-color);
+}
+#des .lapso p{
+    margin-bottom: 40px;
+    position: relative;
+}
+#des .tex{
+    background: transparent;
+    padding-top: 20px;
+
+}
+
+#des .tex .accordion-item,#des .accordion-item button{
+    background: transparent;
+}
+#des .tex .accordion-item{
+    border-radius: 20px;
+    margin: 30px;
+    border: 1px solid #08EBBF;
+}
+
+#des .tex h2{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+#des .tex .accordion-item button{
+    color:white;
+    box-shadow: 0 0 0 transparent ;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#des .tex .accordion-item button.accordion-button{
+    background: #08EBBF;
+}
+
+#des .tex .accordion-item button.accordion-button.collapsed{
+    background: transparent;
+}
+#des .tex .accordion-item .accordion-body{
+    color: white;
+    font-size: var(--fontSize-parrafos) ;
+}   
+
+
+
+
+/* ESTUDIOS */
+
+
+.div.container{
+    justify-content: center;
+}
+.accordion-item{
+    background: var(--bg-body);
+    color: white;
+}
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 0px;
+    background: #08EBBF;
+    box-shadow: #292c36;
+}
+
+.ittem-font{
+    background: var(--bg-body)  ;
+}
+footer{
+    padding: 30px;
+    background: #292c36;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+}
+footer img{
+    width: 220px;
+}
+
+
+/* Sección habilidades  */
+#skills{
+    margin-top: 150px;
+}
+
+
+#skills h2{
+    color: white;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.skill{
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 80px;
+    padding: 10px;
+   border-radius: 0%;
+}
+.skill img{
+    margin-bottom: 10px;
+    border-radius: 5%;
+    box-shadow: #08EBBF;
+}
+.skill h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+}
+.skill p{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+.centrado {
+    justify-content: center};
+
+/* FOOTER */
+
+/* RESPONSIVE */
+
+/* Estilos para pantallas (Desktop)*/
+@media (min-width: 1920px) {
+    
+  }
+  
+  /* Estilos para portátiles */
+  @media (max-width: 1280px) {
+    
+  }
+  
+  /* Estilos para iPad Air  */
+  @media (min-width: 820px) and (max-height: 1180px) {
+    
+  }
+  
+  /* Estilos para iPad Mini */
+  @media (min-width: 768px) and (min-height: 1024px) {
+   
+  }
+  
+  /* Estilos para iPhone 12*/
+  @media (min-width: 390px) and (min-height: 844px) {
+    #div.buttoms, svg {
+        width:  52px;
+    }
+    #hero {
+        padding: 0px;
+        margin: 80px 0px 0px;
+    }
+    #hero .cont-info h1{
+        font-size: 40px;
+    }
+    #hero .cont-foto img {
+        width: 80%;
+        display: flex;
+        margin: 38px auto;
+    }
+    .hero-img > img {
+        display: flex;
+        margin: 38px auto;
+        width: 80%;
+    }
+    #des .lapso {
+        margin-top: 0px;
+        padding: 0px;
+    }
+  }
+  
+
+
+
+
+
